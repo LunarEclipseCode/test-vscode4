@@ -17,16 +17,6 @@
 		  "textSearchProvider"
 		]
 	  }
-	},
-	"folderUri": {
-	  "scheme": "memfs",
-	  "path": "/sample-folder"
-	},
-	"additionalBuiltinExtensions": [
-	  {
-		"scheme": "http",
-		"path": "/myExt"
-	  }
-	]
+	}
   }
   

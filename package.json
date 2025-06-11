@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "VSCode web sample",
   "scripts": {
+    "build": "npm run clean && npm run copy-assets && npm run copy-files",
+    "clean": "rm -rf dist",
+    "copy-assets": "mkdir -p dist && cp -r node_modules/vscode-web/dist/* dist/",
+    "copy-files": "cp index.html dist/ && cp product.json dist/",
+    "serve-build": "npx serve dist -p 3000",
     "sample": "node ./http.js"
   },
   "author": "",
